@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Pacifico&display=swap');
+
+header h1 {
+  font-size: 100px;
+  font-weight: 400;
+  font-family: 'Pacifico', cursive;
+  text-align: center;
+  color: #e7fcdd;
+  text-shadow: 2px 2px 0px  #59ad91,
+               4px 4px 0px #8b355d,
+               6px 6px 0px #7a4c6b,
+               8px 8px 0px #3a339b,
+               10px 10px 0px #313eb4;
+
+}
+
+@keyframes color {
+    0%   { background: #0a3131; }
+    20%  { background: #1c0924; }
+    40%  { background: #0d3338; }
+    60%  { background: #200b38; }
+    80%  { background: #032a49; }
+    100% { background: #0b2727; }
+  }
+  
+  body {
+    background: #0a3131; /* Fallback */
+    animation: color 15s infinite linear;
+    text-align: center;
+    padding: 2em;
+  }
+  
+  ul {
+    text-align: center;
+    margin-left: 15vw;
+    margin-right: 15vw;
+  }
+
+  dt,
+  dd {
+    font-family: 'Amatic SC', sans-serif;
+    color:#5a83a5
+  }
+
+  dt {
+    font-size: 35px;
+  }
+
+  dt:hover {
+    background-color: #eb6ce0;
+  }
+
+  dd {
+    font-size: 24px;
+  }
+
+  /*https://www.w3schools.com/howto/howto_css_bottom_nav.asp*/
+  /* Place the navbar at the bottom of the page, and make it stick */
+.navbar {
+    background-color: #00000000;
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Amatic SC', sans-serif;;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 32px;
+  }
+  
+  /* Change the color of links on hover */
+  .navbar a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Add a color to the active/current link */
+  .navbar a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
